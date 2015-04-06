@@ -111,20 +111,3 @@ BOARD_SEPOLICY_UNION += \
         ueventd.te \
         vold.te \
         radio.te
-
-#TWRP config:
-DEVICE_RESOLUTION := 800x1280
-LANDSCAPE_RESOLUTION := 1280x800
-TW_DEFAULT_ROTATION := 0
-BOARD_HAS_NO_REAL_SDCARD := true
-RECOVERY_SDCARD_ON_DATA := true
-TW_NO_USB_STORAGE := true
-TW_INCLUDE_JB_CRYPTO := true
-TW_INTERNAL_STORAGE_PATH := "/data/media"
-TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
-TW_EXTERNAL_STORAGE_PATH := "/usb-otg"
-TW_EXTERNAL_STORAGE_MOUNT_POINT := "usb-otg"
-TW_BRIGHTNESS_PATH := /sys/devices/platform/pwm-backlight/backlight/pwm-backlight/brightness
-TW_MAX_BRIGHTNESS := 255
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-HAVE_SELINUX := true
